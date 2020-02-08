@@ -39,6 +39,39 @@ body .info-unit h3 {
 /* -------------------------------------------------
  * 主体部分
  * ------------------------------------------------- */
+
+/*.container{
+  animation: top-in  0.8s ease forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+@keyframes top-in{
+  0%{
+      transform: translateY(-300vh);
+      opacity: 0;
+    }
+  100%{
+      opacity: 1;
+  }
+}*/
+@keyframes left-in{
+  0%{
+      transform: translateX(-80vh);
+      opacity: 0;
+    }
+  100%{
+      opacity: 1;
+  }
+}
+@keyframes right-in{
+  0%{
+      transform:translateX(250vh);
+      opacity: 0;
+    }
+  100%{
+      opacity: 1;
+  }
+}
 .container .side {
   position: absolute;
   width: 20rem;
@@ -47,6 +80,9 @@ body .info-unit h3 {
   box-shadow: 0 5px 20px #bbb;
   box-sizing: border-box;
   padding: 1rem;
+  animation: left-in  0.8s ease forwards;
+  animation-delay: 0s;
+  opacity: 0;
 }
 
 .container .side .me {
@@ -155,6 +191,9 @@ body .info-unit h3 {
   box-shadow: 0 5px 20px #bbb;
   box-sizing: border-box;
   padding: 1rem;
+  animation: right-in  0.8s ease forwards;
+  animation-delay: 0s;
+  opacity: 0;
 }
 
 .container .main .info-unit ul {
